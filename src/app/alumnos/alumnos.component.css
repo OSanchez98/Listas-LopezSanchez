@@ -1,0 +1,10 @@
+.destacado {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .reprobado {
+    color: red;
+    text-decoration: line-through;
+  }
+  

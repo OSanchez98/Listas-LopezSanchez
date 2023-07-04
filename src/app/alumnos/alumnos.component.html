@@ -1,0 +1,8 @@
+<h2 class="mt-4">Lista de Alumnos</h2>
+<ul class="list-group">
+  <li *ngFor="let alumno of listaAlumnos" [ngClass]="{'list-group-item-success': alumno.promedio >= 7, 'list-group-item-danger': alumno.promedio < 7}" class="list-group-item">
+    {{ alumno.nombre | uppercase }} - Promedio: {{ alumno.promedio }} - {{ alumno.fechaIngreso | date: 'dd/MM/yyyy' }}
+
+  </li>
+</ul>
+
